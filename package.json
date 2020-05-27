@@ -44,7 +44,8 @@
     "toposort-class": "^1.0.1",
     "uuid": "^3.3.3",
     "validator": "^10.11.0",
-    "wkx": "^0.4.8"
+    "wkx": "^0.4.8",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.2.0",
@@ -161,6 +162,9 @@
     "sscce-sqlite": "cross-env DIALECT=sqlite npm run sscce",
     "sscce-mssql": "cross-env DIALECT=mssql npm run sscce",
     "setup-mssql": "env-cmd $npm_package_options_env_cmd ./scripts/setup-mssql",
-    "semantic-release": "semantic-release"
-  }
+    "semantic-release": "semantic-release",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
