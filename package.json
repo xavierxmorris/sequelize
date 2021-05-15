@@ -44,7 +44,7 @@
     "toposort-class": "^1.0.1",
     "uuid": "^3.3.3",
     "validator": "^10.11.0",
-    "wkx": "^0.4.8"
+    "wkx": "^0.5.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.2.0",
